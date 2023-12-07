@@ -2155,7 +2155,12 @@ select.mobile-device {
 .footer {
     padding: 90px 0 80px !important;
     color: #999;
-    background-color: #393939;
+    /* background-color: #393939; */
+    border-top: 1px solid rgba(253,224,66,255);
+    font-weight: 600;
+    background-image: url('uploads/inner-bgportel.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .footer .widget-title {
@@ -2172,7 +2177,7 @@ select.mobile-device {
 }
 
 .footer .widget-title h3 {
-    color: #fff;
+    color:rgba(253,224,66,255);
     font-weight: 500;
     font-size: 21px;
     padding: 0;
@@ -2186,7 +2191,7 @@ select.mobile-device {
 }
 
 .footer-links a {
-    color: #999;
+    color:white;
 	display: block;
 }
 
@@ -2206,7 +2211,7 @@ select.mobile-device {
 
 .footer-links a:hover,
 .footer a:hover {
-    color: #fd6802 !important;
+    color: rgba(47,36,132,255) !important;
 }
 
 .footer-links li {
@@ -2239,10 +2244,11 @@ select.mobile-device {
     margin-right: 10px;
     border-right: 1px dashed rgba(255, 255, 255, 0.1);
 }
-
+.contact_info{
+    color: white;
+}
 .copyrights {
-    border-top: 1px dashed rgba(255, 255, 255, 0.1);
-    background-color: #1f1f1f;
+    border-top: 1px dashed rgba(253,224,66,255);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -2279,11 +2285,12 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a{
-	color: #ffffff;
+	color: rgba(253,224,66,255);
+    font-weight: 600;
 }
 
 .footer-distributed .footer-company-name a:hover{
-	color: #fd6802;
+	color: rgba(47,36,132,255);
 }
 
 
