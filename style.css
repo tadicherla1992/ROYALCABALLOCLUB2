@@ -2252,7 +2252,7 @@ select.mobile-device {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    padding: 50px 60px;
+    padding: 10px 60px;
     overflow: hidden;
 }
 
@@ -2280,12 +2280,13 @@ select.mobile-device {
 .footer-distributed .footer-company-name {
     font-weight: 300;
     margin: 0 10px;
-    color: #666;
+    color:white;
+    font-weight: 600;
     padding: 0;
 }
 
 .footer-distributed .footer-company-name a{
-	color: rgba(253,224,66,255);
+	color: rgba(47,36,132,255);
     font-weight: 600;
 }
 

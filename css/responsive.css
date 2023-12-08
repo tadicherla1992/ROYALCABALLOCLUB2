@@ -290,7 +290,7 @@
     width: 300px;
   }
   .footer-distributed {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
   }
   .footer-distributed .footer-company-name {
@@ -427,7 +427,7 @@
     display: none !important;
   }
   .copyrights {
-    padding: 40px 10px;
+    padding: 20px 10px;
   }
   .footer-distributed {
     padding: 0;
