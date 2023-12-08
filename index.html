@@ -34,6 +34,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
 </head>
 
@@ -360,60 +362,14 @@
             </div>
         </div>
     </div>
-    <style>
-        .slider {
-            height: 250px;
-            margin: auto;
-            position: relative;
-            width: 90%;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-        }
 
-        .slide-track {
-            display: flex;
-            width: calc(250px*10);
-            animation: scroll 40s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-250px*5));
-            }
-        }
-
-        .slide {
-            height: 200px;
-            width: 250px;
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            perspective: 150px;
-        }
-
-        .slide img {
-            width: 100%;
-            transition: transform 1s;
-        }
-
-        .slide img:hover {
-            transform: translateZ(20px);
-        }
-    </style>
     <div id="services" class="parallax section lb">
         <div class="container">
             <div class="section-title text-center">
-                <h3 class="h">Senior Trainer</h3>
-                <p class="lead h2" style="color: rgba(47, 36, 132, 255);font-weight: 600;">Our Service ROYAL CABALLO
-                    CLUB services.</p>
+                <h3 class="h">Senior Trainer's</h3>
             </div><!-- end title -->
 
-            <div class="owl-services owl-carousel owl-theme">
+            <div class="grid">
                 <div class="service-widget">
                     <div class="post-media wow fadeIn">
                         <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]"
@@ -452,220 +408,94 @@
                         <p>10 years of in show jumping he train students for show jumping..</p>
                     </div>
                 </div>
-                <!-- end service -->
-
-                <!-- <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_04.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Digital Design for Mac</h3>
-						<p>Praesent in neque congue sapien lobortis faucibus id eget erat. <br>Pellentesque maximus rutrum felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-					</div>
-                </div> -->
-                <!-- end service -->
             </div><!-- end row -->
-
-            <hr class="hr1">
-
-            <!-- <div class="text-center">
-                <a data-scroll href="#portfolio" class="btn btn-light btn-radius btn-brd">View Our Portfolio</a>
-            </div> -->
         </div><!-- end container -->
     </div><!-- end section -->
-
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 1rem;
+            padding-bottom: 3rem;
+        }
+    </style>
     <video style="width: 100vw;height:100vh;" controls="controls">
         <source src="uploads/Horselogo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-
-    <!-- <div id="features" class="section lb">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3><span style="color:rgb(9, 9, 134)"> S P A T I A L M I N D</span> <span style="color:rgb(22, 200, 22)">G E O</span> <span style="color:rgb(156, 159, 156)">T E C H N O L O G I E S</span></h3>
-                <h3>Features & Overviews</h3>
-                <p class="lead">Several options are available to you when working with lidar data in ArcGIS. A few common lidar workflow examples have been discussed in the following seven topics.</p>
-            </div>end title -->
-
-    <!-- <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="features-left">
-                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <i class="flaticon-wordpress-logo"></i>
-                            <div class="fl-inner">
-                                <h4>WordPress Installation</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-                            <i class="flaticon-windows"></i>
-                            <div class="fl-inner">
-                                <h4>Browser Compatible</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <i class="flaticon-price-tag"></i>
-                            <div class="fl-inner">
-                                <h4>eCommerce Ready</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                        <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <i class="flaticon-new-file"></i>
-                            <div class="fl-inner">
-                                <h4>Easy to Customize</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 hidden-xs hidden-sm">
-                    <img src="uploads/ipad9.png" class="img-center img-responsive" alt="">
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="features-right">
-                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <i class="flaticon-pantone"></i>
-                            <div class="fr-inner">
-                                <h4>Limitless Colors</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-                            <i class="flaticon-cloud-computing"></i>
-                            <div class="fr-inner">
-                                <h4>Lifetime Update</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <i class="flaticon-line-graph"></i>
-                            <div class="fr-inner">
-                                <h4>SEO Friendly</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                        <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <i class="flaticon-coding"></i>
-                            <div class="fr-inner">
-                                <h4>Simple Clean Code</h4>
-                                <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>end col -->
-    </div><!-- end row -->
-    </div><!-- end container -->
-    </div><!--end section -->
-
-    <div class="slider-area">
-        <div class="slider-wrapper owl-carousel">
-            <div class="slider-item text-center home-one-slider-otem slider-item-four slider-bg-one">
-                <div class="container">
-                    <div class="row">
-                        <div class="slider-content-area">
-                            <div class="slide-text">
-                                <h1 class="homepage-three-title"
-                                    style="-webkit-text-stroke-width: 2px;-webkit-text-stroke-color:rgba(47,36,132,255);-webkit-text-fill-color:rgba(253,224,66,255);text-shadow: 5px 5px 10px rgb(213, 200, 200),5px 5px 10px blue;">
-                                    ROYAL <span> CABALLO </span> CLUB</h1>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="sliderb">
+        <div class="slide-trackb">
+            <div class="slideb">
+                <img src="uploads/inner-1bg.jpg" alt="" />
             </div>
-            <div class="slider-item text-center home-one-slider-otem slider-item-four slider-bg-two">
-                <div class="container">
-                    <div class="row">
-                        <div class="slider-content-area">
-                            <div class="slide-text">
-                                <h1 class="homepage-three-title">ROYAL <span> CABALLO </span> CLUB</h1>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="slideb">
+                <img src="uploads/about-royal.jpg" alt="" />
             </div>
-            <div class="slider-item text-center home-one-slider-otem slider-item-four slider-bg-three">
-                <div class="container">
-                    <div class="row">
-                        <div class="slider-content-area">
-                            <div class="slide-text">
-                                <h1 class="homepage-three-title">ROYAL <span> CABALLO </span> CLUB</h1>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-item text-center home-one-slider-otem slider-item-four slider-bg-forth">
-                <div class="container">
-                    <div class="row">
-                        <div class="slider-content-area">
-                            <div class="slide-text">
-                                <h1 class="homepage-three-title">ROYAL <span> CABALLO </span> CLUB</h1>
-
-
-                            </div>
-                            <br>
-
-                            <div style="text-align:center">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
-
-                            <script>
-                                let slideIndex = 1;
-                                showSlides(slideIndex);
-
-                                function plusSlides(n) {
-                                    showSlides(slideIndex += n);
-                                }
-
-                                function currentSlide(n) {
-                                    showSlides(slideIndex = n);
-                                }
-
-                                function showSlides(n) {
-                                    let i;
-                                    let slides = document.getElementsByClassName("mySlides");
-                                    let dots = document.getElementsByClassName("dot");
-                                    if (n > slides.length) { slideIndex = 1 }
-                                    if (n < 1) { slideIndex = slides.length }
-                                    for (i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";
-                                    }
-                                    for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" active", "");
-                                    }
-                                    slides[slideIndex - 1].style.display = "block";
-                                    dots[slideIndex - 1].className += " active";
-                                }
-                            </script>
-
-
-
-
-                            <!-- <div id="testimonials" class="parallax section db parallax-off"
-        style="background-image:url('uploads/background-image.jpg');background-position: center;background-repeat: no-repeat;height:90vh;padding-top: 3rem;">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3><span style="color:rgba(253,224,66,255);padding-top: 100px;"> R O Y A L C A B A L L O C L U B</span>
-                </h3>
-                <p class="lead" style="color: white;font-weight: 700;">hundreds of our happy customers! <br>R O Y A L C
-                    A B A L L O C L U B!</p> -->
-                        </div><!-- end title -->
-                    </div><!-- end container -->
-                </div><!-- end section -->
+            <div class="slideb">
+                <img src="imagess/about64.jpg" alt="" />
             </div>
         </div>
     </div>
+    <style>
+        .sliderb {
+            height: 100vh;
+            margin: auto;
+            position: relative;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
 
+        .slide-trackb {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            animation: scroll 40s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-100vw*1));
+            }
+        }
+
+        .slideb {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+        }
+
+        .slideb img {
+            width: 100vw;
+            height: 100%;
+            transition: transform 1s;
+        }
+
+        @media(max-width:992px) {
+            .sliderb img {
+                object-fit: scale-down;
+                width: auto;
+            }
+
+            .sliderb {
+                width: 100%;
+                height: 300px;
+            }
+
+            .slideb {
+                height: 300px;
+            }
+        }
+    </style>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -743,7 +573,15 @@
     <script src="js/custom.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/hoverdir.js"></script>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
 
 </body>
 

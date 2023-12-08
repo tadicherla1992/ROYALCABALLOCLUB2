@@ -74,36 +74,8 @@
     </style>
     <!-- END LOADER -->
 
-    <!-- <div class="top-bar">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="left-top">
-						<div class="email-box">
-							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> spatialmindgt@gmail.com</a>
-						</div>
-						<div class="phone-box">
-							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 890</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="right-top">
-						<div class="social-box">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-							<ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-    <header class="header header_style_01">
+
+    <header class="header header_style_01" style="background-color: rgba(47,36,132,255);">
         <nav class="megamenu navbar navbar-default">
             <div class="d">
                 <div class="navbar-header">
@@ -305,15 +277,13 @@
             </div><!-- end portfolio -->
         </div><!-- end container -->
     </div><!-- end section -->
-
     <div id="services" class="parallax section lb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Senior Trainer</h3>
-                <p class="lead">Our Service ROYAL CABALLO CLUB services.</p>
+                <h3 class="h">Senior Trainer's</h3>
             </div><!-- end title -->
 
-            <div class="owl-services owl-carousel owl-theme">
+            <div class="grid">
                 <div class="service-widget">
                     <div class="post-media wow fadeIn">
                         <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]"
@@ -348,33 +318,22 @@
                         <img src="uploads/service_03.jpg" alt="" class="img-responsive img-rounded">
                     </div>
                     <div class="service-dit">
-                        <h3>ROYAL CABALLO CLUB</h3>
-                        <p> 10 years of in show jumping he train students for show jumping..</p>
-                    </div>
-                </div>
-                <!-- end service -->
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_03.jpg" data-rel="prettyPhoto[gal]"
-                            class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_03.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-                    <div class="service-dit">
-                        <h3>ROYAL CABALLO CLUB</h3>
+                        <h3>ROYAL CABALLO CLUB </h3>
                         <p>10 years of in show jumping he train students for show jumping..</p>
                     </div>
                 </div>
-                <!-- end service -->
             </div><!-- end row -->
-
-            <hr class="hr1">
-
-            <div class="text-center">
-                <a data-scroll href="#portfolio" class="btn btn-light btn-radius btn-brd">View Our Portfolio</a>
-            </div>
         </div><!-- end container -->
     </div><!-- end section -->
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 1rem;
+            padding-bottom: 3rem;
+        }
+    </style>
 
     <div id="testimonials" class="parallax section db parallax-off"
         style="background-image:url('uploads/parallax_03.jpg');">

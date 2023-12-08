@@ -30,15 +30,12 @@
     IMPORT FONTS
 -------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,900');
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,900'); */
 
 /*------------------------------------------------------------------
     IMPORT FILES
 -------------------------------------------------------------------*/
-/* @font-face {
-    font-family: "Autumn Flowers";
-    src: url(fonts/AutumnFlowers-9YVZK.otf);
-} */
+
 
 @import url(css/animate.css);
 @import url(css/flaticon.css);
@@ -477,10 +474,10 @@ a img.aligncenter {
 }
 
 .header_style_01 .navbar-default .navbar-nav > li a.active{
-	color:rgba(253,224,66,255);
+	color:white;
 	box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15);
 	border-radius: 25px 0px 25px 0px;
-	background:rgba(47,36,132,255);
+	background:rgba(253,224,66,255);
 }
 
 .header_style_01 .navbar-default .navbar-nav > li:hover a,
@@ -488,7 +485,7 @@ a img.aligncenter {
     color: #ffffff;
 	box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15);
 	border-radius: 25px 0px 25px 0px;
-	background:rgba(47,36,132,255);
+	background:rgba(253,224,66,255);
 }
 
 .header_style_01 .navbar-right > li {
@@ -964,7 +961,7 @@ li.social-links a {
 }
 
 .da-thumbs .pitem a div i {
-    background-color: #fd6802;
+    background-color: rgba(47,36,132,255);
     position: absolute;
     color: #ffffff !important;
     bottom: 0;
@@ -1434,7 +1431,7 @@ li.social-links a {
     justify-content: center;
 }
 .hoverbutton {
-    background-color: #fd6802;
+    background-color: rgba(253,224,66,255);
     position: absolute;
     color: #ffffff !important;
     top: 48%;
@@ -2471,7 +2468,50 @@ select.mobile-device {
     transition: 50s all;
 }
 
+/*index image slider*/
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
 
+.slide-track {
+    display: flex;
+    width: calc(250px*10);
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*5));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 150px;
+}
+
+.slide img {
+    width: 100%;
+    transition: transform 1s;
+}
+
+.slide img:hover {
+    transform: translateZ(20px);
+}
 
 .loader {
   
@@ -2950,7 +2990,7 @@ select.mobile-device {
 	top: 0px;
 	width: 100%;
 	padding: 0px 0px;
-	background: #ffffff;
+	background: rgba(47,36,132,255);
 	z-index: 0;
 	transition: all 1s ease-in-out;
 	z-index: 9999;
@@ -3146,7 +3186,7 @@ select.mobile-device {
 	position: relative;
 }
 .banner h2::after {
-    background: #fd6802;
+    background:rgba(47,36,132,255);
     content: "";
     height: 35px;
     left: -15px;
@@ -3168,10 +3208,10 @@ select.mobile-device {
 	font-weight: 500;
 }
 .page-title-link li a:hover {
-	color: #fd6802;
+	color:rgba(253,224,66,255);
 }
 .page-title-link li::after {
-    background: #fcbf02;
+    background:rgba(253,224,66,255);
     bottom: 8px;
     content: "";
     height: 2px;
