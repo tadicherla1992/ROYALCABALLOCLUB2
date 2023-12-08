@@ -110,7 +110,7 @@
         <nav class="megamenu navbar navbar-default">
             <div class="d">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html"><img class="logo1" src="images/logos/logo1.png"
+                    <a class="navbar-brand" href="index.html"><img class="logo1" src="uploads/logo1 -trans.png"
                             alt="image"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -257,77 +257,139 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
-
+    <div class="">
+        <h3 class="h text-center" style="margin-bottom: 0;text-transform: uppercase;font-weight: 800;">Awards</h3>
+        <p class="text-center" style="font-weight: 600;">ROYAL CABALLO CLUB</p>
+    </div>
+    <div class="sliderb">
+        <div class="slide-trackb">
+            <div class="slideb">
+                <img src="uploads/inner-1bg.jpg" alt="" />
+            </div>
+            <div class="slideb">
+                <img src="uploads/about-royal.jpg" alt="" />
+            </div>
+            <div class="slideb">
+                <img src="imagess/about64.jpg" alt="" />
+            </div>
+            <div class="slideb">
+                <img src="uploads/about-royal.jpg" alt="" />
+            </div>
+        </div>
+        <!-- <div class="nav-buttons">
+            <button class="prev" onclick="changeSlide(-1)">Previous</button>
+            <button class="next" onclick="changeSlide(1)">Next</button>
+        </div> -->
+    </div>
     <style>
-        .wb {
-            padding-top: 3rem;
+        .sliderb {
+            height: 70vh;
+            margin: auto;
+            position: relative;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
 
-        .h {
-            font-weight: 800;
-            color: rgba(253, 224, 66, 255);
-            font-size: 30px;
+        .slide-trackb {
+            display: flex;
+            width: 100vw;
+            height: 80vh;
+            animation: sliderb 25s linear infinite;
         }
 
-        .wb .h {
-            font-weight: 800;
-            color: rgba(253, 224, 66, 255);
-            font-size: 30px;
+        @keyframes sliderb {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-100vw*3));
+            }
         }
 
-        .wb .h2 {
-            font-size: 30px;
-            font-weight: 600;
-            color: rgba(47, 36, 132, 255);
-        }
-
-        .wb .h2 span:nth-child(1) {
-            color: rgba(47, 36, 132, 255);
-            font-weight: 600;
-        }
-
-        .wb .h2 span:nth-child(2) {
-            color: rgba(253, 224, 66, 255);
-            font-weight: 700;
-        }
-
-        .wb .p1,
-        .wb .p2 {
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .h31 {
+        .slideb {
+            height: 70vh;
+            width: 100vw;
             display: flex;
             align-items: center;
-            justify-content: center;
         }
 
-        .h3 {
-            padding: 0;
-            margin: 0;
-            width: 240px;
-            position: relative;
+        .slideb img {
+            width: 100vw;
+            height: 100%;
+            transition: transform 1s;
         }
 
-        .h3:after {
+        .nav-buttons {
             position: absolute;
-            content: "";
-            top: 100%;
-            left: 0;
-            height: 3px;
-            background-color: rgba(253, 224, 66, 255);
-            width: 0;
-            transition: .8s;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
         }
 
-        .h3:hover:after {
-            width: 100%;
+        .nav-buttons button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 1rem;
+            color: white;
         }
+
+        /* Add this class to pause animation on hover */
+        .sliderb:hover .slide-trackb {
+            animation-play-state: paused;
+        }
+
+        @media(max-width:992px) {
+            .sliderb img {
+                object-fit: scale-down;
+                width: auto;
+            }
+
+            .sliderb {
+                width: 100%;
+                height: 300px;
+            }
+
+            .slideb {
+                height: 300px;
+            }
+        }
+    </style>
+    <script>
+        let currentSlide = 1;
+
+        function changeSlide(n) {
+            showSlide(currentSlide += n);
+        }
+
+        function showSlide(n) {
+            let slides = document.querySelectorAll('.slideb');
+            if (n > slides.length) {
+                currentSlide = 1;
+            }
+            if (n < 1) {
+                currentSlide = slides.length;
+            }
+            let translateValue = -100 * (currentSlide - 1) + 'vw';
+            document.querySelector('.slide-trackb').style.transform = 'translateX(' + translateValue + ')';
+        }
+    </script>
+
+    <style>
+
     </style>
     <div class="section-title text-center h31">
         <h3 class="h">Our Gallery</h3>
-    </div>s
+    </div>
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
@@ -424,78 +486,7 @@
         <source src="uploads/Horselogo.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <div class="sliderb">
-        <div class="slide-trackb">
-            <div class="slideb">
-                <img src="uploads/inner-1bg.jpg" alt="" />
-            </div>
-            <div class="slideb">
-                <img src="uploads/about-royal.jpg" alt="" />
-            </div>
-            <div class="slideb">
-                <img src="imagess/about64.jpg" alt="" />
-            </div>
-        </div>
-    </div>
-    <style>
-        .sliderb {
-            height: 100vh;
-            margin: auto;
-            position: relative;
-            width: 100vw;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
 
-        .slide-trackb {
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            animation: scroll 40s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-100vw*1));
-            }
-        }
-
-        .slideb {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-        }
-
-        .slideb img {
-            width: 100vw;
-            height: 100%;
-            transition: transform 1s;
-        }
-
-        @media(max-width:992px) {
-            .sliderb img {
-                object-fit: scale-down;
-                width: auto;
-            }
-
-            .sliderb {
-                width: 100%;
-                height: 300px;
-            }
-
-            .slideb {
-                height: 300px;
-            }
-        }
-    </style>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -518,7 +509,7 @@
                             <h3 class="h">Pages</h3>
                         </div>
 
-                        <ul class="footer-links hov">
+                        <!-- <ul class="footer-links hov">
                             <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="#">about <span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="#">Our services <span class="icon icon-arrow-right2"></span></a>
@@ -526,7 +517,16 @@
                             <li><a href="#">portfolio <span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="#">Registrationform <span class="icon icon-arrow-right2"></span></a>
                             </li>
-                            <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li> -->
+                        <ul class="footer-links hov">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about </a></li>
+                            <li><a href="#">Our services </a>
+                            </li>
+                            <li><a href="#">portfolio </a></li>
+                            <li><a href="#">Registrationform </a>
+                            </li>
+                            <li><a href="#">Contact </a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
