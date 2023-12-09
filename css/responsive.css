@@ -328,12 +328,12 @@
     background-color: #ffffff;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 82vh;
+    height: 100vh;
   }
 }
 @media (max-width: 992px) {
   .home-one-slider-otem .slider-content-area {
-    height: 82vh;
+    height: 100vh;
   }
 }
 @media (max-width: 768px) {
@@ -413,7 +413,7 @@
     top: 7px;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 82vh;
+    height: 100vh;
   }
 }
 
@@ -474,11 +474,16 @@
     text-align: center;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 82vh;
+    height: 108vh;
   }
 }
 @media (max-width: 400px) {
   .home-one-slider-otem .slider-content-area {
-    height: 82vh;
+    height: 85vh;
+  }
+}
+@media (max-width: 576px) {
+  .home-one-slider-otem .slider-content-area {
+    height: 90vh;
   }
 }
