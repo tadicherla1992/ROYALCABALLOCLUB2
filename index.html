@@ -245,7 +245,7 @@
                             inspire generations of equestrians and horse enthusiasts.....</p>
 
                         <p class="p2"> From the architecture of the clubhouse to the design of the riding trails, every
-                            detail at the Royal Caballo Club exudes elegance. The club's aesthetic combines classic
+                            detail at the Royal Caballo Club exudes elegance.The club's aesthetic combines classic
                             sophistication with modern amenities, creating an atmosphere that reflects the timeless bond
                             between humans and horses. Members can enjoy fine dining with a view of the stables, relax
                             in luxurious lounges, and partake in events that showcase the finest aspects of equestrian
@@ -261,165 +261,60 @@
         <h3 class="h text-center" style="margin-bottom: 0;text-transform: uppercase;font-weight: 800;">Awards</h3>
         <p class="text-center" style="font-weight: 600;">ROYAL CABALLO CLUB</p>
     </div>
-    <div class="sliderb">
-        <div class="slide-trackb">
-            <div class="slideb">
-                <img src="uploads/inner-1bg.jpg" alt="" />
+    <div id="slider-container">
+        <div id="slider-track">
+            <div class="slide">
+                <img src="uploads/inner-1bg.jpg" alt="Slide 1">
             </div>
-            <div class="slideb">
-                <img src="uploads/about-royal.jpg" alt="" />
+            <div class="slide">
+                <img src="uploads/about-royal.jpg" alt="Slide 2">
             </div>
-            <div class="slideb">
-                <img src="imagess/about64.jpg" alt="" />
+            <div class="slide">
+                <img src="imagess/about64.jpg" alt="Slide 3">
             </div>
-            <div class="slideb">
+            <div class="slide">
                 <img src="uploads/about-royal.jpg" alt="" />
             </div>
         </div>
-        <!-- <div class="nav-buttons">
-            <button class="prev" onclick="changeSlide(-1)">Previous</button>
-            <button class="next" onclick="changeSlide(1)">Next</button>
-        </div> -->
+        <div id="nav-buttons">
+            <button onclick="prevSlide()"><i class="fa fa-angle-left"></i></button>
+            <button onclick="nextSlide()"><i class="fa fa-angle-right"></i></button>
+        </div>
     </div>
-    <style>
-        .sliderb {
-            height: 70vh;
-            margin: auto;
-            position: relative;
-            width: 100vw;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
 
-        .slide-trackb {
-            display: flex;
-            width: 100vw;
-            height: 80vh;
-            animation: sliderb 25s linear infinite;
-        }
-
-        @keyframes sliderb {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-100vw*3));
-            }
-        }
-
-        .slideb {
-            height: 70vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-        }
-
-        .slideb img {
-            width: 100vw;
-            height: 100%;
-            transition: transform 1s;
-        }
-
-        .nav-buttons {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            z-index: 1;
-        }
-
-        .nav-buttons button {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            padding: 1rem;
-            color: white;
-        }
-
-        /* Add this class to pause animation on hover */
-        .sliderb:hover .slide-trackb {
-            animation-play-state: paused;
-        }
-
-        @media(max-width:992px) {
-            .sliderb img {
-                object-fit: scale-down;
-                width: auto;
-            }
-
-            .sliderb {
-                width: 100%;
-                height: 300px;
-            }
-
-            .slideb {
-                height: 300px;
-            }
-        }
-    </style>
-    <script>
-        let currentSlide = 1;
-
-        function changeSlide(n) {
-            showSlide(currentSlide += n);
-        }
-
-        function showSlide(n) {
-            let slides = document.querySelectorAll('.slideb');
-            if (n > slides.length) {
-                currentSlide = 1;
-            }
-            if (n < 1) {
-                currentSlide = slides.length;
-            }
-            let translateValue = -100 * (currentSlide - 1) + 'vw';
-            document.querySelector('.slide-trackb').style.transform = 'translateX(' + translateValue + ')';
-        }
-    </script>
-
-    <style>
-
-    </style>
     <div class="section-title text-center h31">
         <h3 class="h">Our Gallery</h3>
     </div>
     <div class="slider">
         <div class="slide-track">
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about56.JPG" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about57.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about58.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about59.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about60.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about61.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about62.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about63.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about64.jpg" alt="" />
             </div>
-            <div class="slide">
+            <div class="slide1">
                 <img src="imagess/about60.jpg" alt="" />
             </div>
         </div>

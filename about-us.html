@@ -291,93 +291,131 @@
 
 
     <hr class="hr1">
-
-    <div class="sliderb">
-        <div class="slide-trackb">
-            <div class="slideb">
-                <img src="uploads/inner-1bg.jpg" alt="" />
+    <div class="">
+        <h3 class="h text-center" style="margin-bottom: 0;text-transform: uppercase;font-weight: 800;">Awards</h3>
+        <p class="text-center" style="font-weight: 600;">ROYAL CABALLO CLUB</p>
+    </div>
+    <div id="slider-container">
+        <div id="slider-track">
+            <div class="slide">
+                <img src="uploads/inner-1bg.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="uploads/about-royal.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="imagess/about64.jpg" alt="Slide 3">
             </div>
             <div class="slideb">
                 <img src="uploads/about-royal.jpg" alt="" />
             </div>
-            <div class="slideb">
-                <img src="imagess/about64.jpg" alt="" />
-            </div>
+        </div>
+        <div id="nav-buttons">
+            <button onclick="prevSlide()"><i class="fa fa-angle-left"></i></button>
+            <button onclick="nextSlide()"><i class="fa fa-angle-right"></i></button>
         </div>
     </div>
-    <style>
-        .sliderb {
-            height: 100vh;
-            margin: auto;
-            position: relative;
-            width: 100vw;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .slide-trackb {
-            display: flex;
-            width: 100vw;
-            height: 100vh;
-            animation: scroll 40s linear infinite;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-100vw*1));
-            }
-        }
-
-        .slideb {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            align-items: center;
-        }
-
-        .slideb img {
-            width: 100vw;
-            height: 100%;
-            transition: transform 1s;
-        }
-
-        @media(max-width:992px) {
-            .sliderb img {
-                object-fit: scale-down;
-                width: auto;
-            }
-
-            .sliderb {
-                width: 100%;
-                height: 300px;
-            }
-
-            .slideb {
-                height: 300px;
-            }
-        }
-    </style>
 
     <div id="testimonials" class="parallax section db parallax-off">
         <div class="container">
             <div class="section-title text-center">
-                <h3><span style="color:rgb(9, 9, 134)"> ROYAL CABALLO CLUB</span> </h3>
+                <h3><span style="color:rgba(253,224,66,255)"> R O Y A L C A B A L L O C L U B</span> </h3>
                 <h2> <span style="color:rgb(22, 200, 22)">HORSE</span> <span
-                        style="color:rgb(176, 179, 176)">TRIDE</span> </h2>
-                <p class="lead">We thanks for all our awesome testimonials! There are hundreds of our happy
-                    customers!
-                    <br>Let's see what others say about GROYAL CABALLO CLUB!
+                        style="color:rgb(176, 179, 176)">rider</span> </h2>
+                <p class="lead">We thanks for all our awesome testimonials! There are hundreds of our happy customers!
+                    <br>Let's see what others say about GoodWEB Solutions website template!
                 </p>
             </div><!-- end title -->
 
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly
+                                    skilled, and experienced & professional team.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                                <h4 style="color: rgba(253,224,66,255);">James Fernando <small>- Manager of
+                                        Racer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
 
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you completed.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
+                                <h4 style="color: rgba(253,224,66,255);">kalyan <small>- CEO</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
+                                    pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
+                                <h4 style="color: rgba(253,224,66,255);">Venanda Mercy <small>- Newyork City</small>
+                                </h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">They have got my project on time with the competition with a sed highly
+                                    skilled, and experienced & professional team.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                                <h4>James Fernando <small>- Manager of Racer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you completed.</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
+                                <h4>Jacques Philips <small>- Designer</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
+                                    pleasure itself, because it is very pursue pleasure. </p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
+                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div><!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
 
             <hr class="hr1">
 
