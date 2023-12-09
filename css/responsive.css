@@ -329,7 +329,7 @@
     background-color: #ffffff;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 460px;
+    height: 100vh;
   }
 }
 
@@ -410,7 +410,7 @@
     top: 7px;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 460px;
+    height: 100vh;
   }
 }
 
@@ -471,6 +471,6 @@
     text-align: center;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 460px;
+    height: 100vh;
   }
 }
