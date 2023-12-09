@@ -282,7 +282,6 @@
     width: 100%;
     text-align: center;
   }
-  .social-links,
   .macbookright {
     display: none !important;
   }
@@ -332,7 +331,11 @@
     height: 100vh;
   }
 }
-
+@media (max-width: 992px) {
+  .home-one-slider-otem .slider-content-area {
+    height: 70vh;
+  }
+}
 @media (max-width: 768px) {
   body.building_version .first-section h2 {
     font-size: 34px;
@@ -410,7 +413,7 @@
     top: 7px;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 100vh;
+    height: 80vh;
   }
 }
 
@@ -471,6 +474,11 @@
     text-align: center;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 100vh;
+    height: 70vh;
+  }
+}
+@media (max-width: 400px) {
+  .home-one-slider-otem .slider-content-area {
+    height: 70vh;
   }
 }
