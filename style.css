@@ -994,6 +994,22 @@ li.social-links a {
     .header{
         padding: 0;
     }
+    .slider-bg-one {
+        background-image: url("uploads/homesmall.jpeg");
+       
+        height:100vh;
+    }
+    
+    .slider-bg-two {
+        background-image: url("uploads/homesmall1.jpeg");
+       
+        height:100vh;
+    }
+   
+    .slider-bg-three {
+        background-image: url("uploads/homesmall2.jpg");
+        height:100vh;
+    }
 }
 @media(max-width:575px){
     .logo1{
