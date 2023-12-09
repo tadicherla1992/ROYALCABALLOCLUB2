@@ -333,7 +333,7 @@
 }
 @media (max-width: 992px) {
   .home-one-slider-otem .slider-content-area {
-    height: 70vh;
+    height: 100vh;
   }
 }
 @media (max-width: 768px) {
@@ -413,7 +413,7 @@
     top: 7px;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -474,11 +474,11 @@
     text-align: center;
   }
   .home-one-slider-otem .slider-content-area {
-    height: 70vh;
+    height: 100vh;
   }
 }
 @media (max-width: 400px) {
   .home-one-slider-otem .slider-content-area {
-    height: 70vh;
+    height: 100vh;
   }
 }
