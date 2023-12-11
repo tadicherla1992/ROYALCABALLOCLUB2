@@ -50,7 +50,7 @@
 }
 @media (max-width: 992px) {
   .owl-carousel .owl-item {
-    height: 105760vh;
+    height: 100vh;
   }
   .owl-carousel .owl-item img {
     width: 100%;

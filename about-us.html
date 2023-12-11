@@ -37,43 +37,14 @@
 
 </head>
 
-<body>
+<div>
 
     <!-- LOADER -->
     <div id="preloader">
-        <div class="loader">
-            <!-- <div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__bar"></div>
-			<div class="loader__ball"></div> -->
-            <img class="horseload" src="uploads/logo1 - Copy.png" style="width:100px;" />
-
-        </div>
+        <img class="horseload" src="uploads/logo1 - Copy.png" style="width:100px;" />
+        <div class="load"></div>
     </div><!-- end loader -->
     <!-- END LOADER -->
-    <style>
-        .loader .horseload {
-            animation: h 5s linear infinite;
-        }
-
-        @keyframes h {
-            0% {
-                transform: translateX(-5px);
-            }
-
-            50% {
-                transform: translateX(5px);
-            }
-
-            100% {
-                transform: translateZ(-5px);
-            }
-        }
-    </style>
-    <!-- END LOADER -->
-
     <!-- <div class="top-bar">
 		<div class="container-fluid">
 			<div class="row">
@@ -197,9 +168,7 @@
                             about the safety
                             measures in place, such
                             as the use
-                            of helmets, trained staff, and well-maintained equipment.
-
-                            Membership Information: If the Royal Caballo Club operates on a membership basis,. </h2>
+                            of helmets, trained staff, and well-maintained equipment.</h2>
                         <p class="p1">Are you interested in taking riding lessons? The Royal Caballo Club may offer
                             lessons for various skill levels, from beginners to advanced riders.!</p>
 
@@ -316,132 +285,120 @@
         </div>
     </div>
 
-    <div id="testimonials" class="parallax section db parallax-off">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3><span style="color:rgba(253,224,66,255)"> R O Y A L C A B A L L O C L U B</span> </h3>
-                <h2> <span style="color:rgb(22, 200, 22)">HORSE</span> <span
-                        style="color:rgb(176, 179, 176)">rider</span> </h2>
-                <p class="lead">We thanks for all our awesome testimonials! There are hundreds of our happy customers!
-                    <br>Let's see what others say about GoodWEB Solutions website template!
-                </p>
-            </div><!-- end title -->
+    <style>
+        /* Add your own styling here */
+        .carousel-container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
 
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="testi-carousel owl-carousel owl-theme">
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly
-                                    skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
-                                <h4 style="color: rgba(253,224,66,255);">James Fernando <small>- Manager of
-                                        Racer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
+        .carousel-track {
+            display: flex;
+            animation: rotateCarousel 10s linear infinite;
+            /* Adjust duration as needed */
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
-                                    praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
-                                <h4 style="color: rgba(253,224,66,255);">kalyan <small>- CEO</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
+        }
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
-                                    pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
-                                <h4 style="color: rgba(253,224,66,255);">Venanda Mercy <small>- Newyork City</small>
-                                </h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly
-                                    skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and
-                                    praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div>
-                        <!-- end testimonial -->
+        .testimonial {
+            min-width: 100%;
+        }
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids
-                                    pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div>
-                            <!-- end testi-meta -->
-                        </div><!-- end testimonial -->
-                    </div><!-- end carousel -->
-                </div><!-- end col -->
-            </div><!-- end row -->
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
 
-            <hr class="hr1">
 
-            <div class="row logos">
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
+        @keyframes rotateCarousel {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    <div>
+        <h2 class="h text-center" style="padding-top: 3rem;text-transform: uppercase;">Testimonials</h2>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-track" id="testimonialTrack">
+            <div class="testimonial">
+                <div class="testimonial clearfix">
+                    <div class="desc">
+                        <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                        <p class="lead">They have got my project on time with the competition with a sed highly
+                            skilled, and experienced & professional team.</p>
+                    </div>
+                    <div class="testi-meta">
+                        <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                        <h4 style="color: rgba(253,224,66,255);">kalyan <small>- CEO</small></h4>
+                    </div>
+                    <!-- end testi-meta -->
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial clearfix">
+                    <div class="desc">
+                        <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                        <p class="lead">They have got my project on time with the competition with a sed highly
+                            skilled, and experienced & professional team.</p>
+                    </div>
+                    <div class="testi-meta">
+                        <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                        <h4 style="color: rgba(253,224,66,255);">kalyan <small>- CEO</small></h4>
+                    </div>
+                    <!-- end testi-meta -->
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial clearfix">
+                    <div class="desc">
+                        <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                        <p class="lead">They have got my project on time with the competition with a sed highly
+                            skilled, and experienced & professional team.</p>
+                    </div>
+                    <div class="testi-meta">
+                        <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
+                        <h4 style="color: rgba(253,224,66,255);">kalyan <small>- CEO</small></h4>
+                    </div>
+                    <!-- end testi-meta -->
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-            </div><!-- end row -->
+            </div>
+            <!-- Add more testimonials as needed -->
+        </div>
 
-        </div><!-- end container -->
-    </div><!-- end section -->
+    </div>
+
+
+    <!-- <script>
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        let currentIndex = 0;
+
+        function showTestimonial(index) {
+            const trackWidth = testimonialTrack.clientWidth;
+            testimonialTrack.style.transform = `translateX(-${index * trackWidth}px)`;
+        }
+
+        function nextTestimonial() {
+            currentIndex = (currentIndex + 1) % testimonialTrack.children.length;
+            showTestimonial(currentIndex);
+        }
+
+        function prevTestimonial() {
+            currentIndex = (currentIndex - 1 + testimonialTrack.children.length) % testimonialTrack.children.length;
+            showTestimonial(currentIndex);
+        }
+
+        // Automatic sliding every 3 seconds (adjust as needed)
+        setInterval(nextTestimonial, 3000);
+    </script> -->
+
+
     <!--whatsapp-->
     <a href="https://wa.me/+919502667505" class="whatsapp-link"><span class="icon icon-whatsapp whatsapp"></span></a>
 
@@ -455,8 +412,13 @@
                             <img src="images/logos/logo1.png" alt="" />
                         </div>
                         <p>
-                        <h2 class="h"><span> R O Y A L C A B A L L O C L U B </span> <span
-                                style="color:rgba(47, 36, 132, 255)">HORSE</span> RIDING</h2>
+                        <h2
+                            style="color:rgba(253,224,66,255);font-size: 20px;font-weight: 800;line-height: 2;letter-spacing: 0.5px;">
+                            <span>
+                                ROYAL CABALLO CLUB </span> <span
+                                style="color:rgba(47, 36, 132, 255);font-size: 20px;font-weight: 700;">HORSE</span>
+                            RIDING
+                        </h2>
                         </p>
 
                     </div><!-- end clearfix -->
@@ -470,17 +432,19 @@
 
                         <ul class="footer-links hov">
                             <li><a href="#">Home <span class="icon icon-arrow-right2"></span></a></li>
-                            <li><a href="#">about <span class="icon icon-arrow-right2"></span></a></li>
-                            <li><a href="#">Our services <span class="icon icon-arrow-right2"></span></a>
+                            <li><a href="about-us.html">about <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="services.html">Our services <span class="icon icon-arrow-right2"></span></a>
                             </li>
-                            <li><a href="#">portfolio <span class="icon icon-arrow-right2"></span></a></li>
-                            <li><a href="#">Registrationform <span class="icon icon-arrow-right2"></span></a>
+                            <li><a href="portfolio.html">portfolio <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="Registrationform.html">Registrationform <span
+                                        class="icon icon-arrow-right2"></span></a>
                             </li>
-                            <li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="contact.html">Contact <span class="icon icon-arrow-right2"></span></a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
                 <div class="col c3">
+                    <!-- <h3 style="color: rgba(253,224,66,255);"><span>Contact</span> Us</h3> -->
                     <p style="color: rgba(253,224,66,255);">Contact Us</p>
                     <p><span style="color: rgba(47, 36, 132, 255)"> R O Y A L C A B A L L O C L U B</span>
                     </p>
@@ -501,8 +465,6 @@
                         <a href="tel:+919502667505"><span class="icon icon-phone"></span></a>
                     </div>
                 </div>
-
-
             </div><!-- end row -->
         </div><!-- end container -->
     </footer><!-- end footer -->
@@ -514,7 +476,7 @@
                     <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">ROYAL
                             CABALLO CLUB</a>
                         Design By :
-                        <a href="https://www.thepatternscompany.com/">The Patterns company.com</a>
+                        <a href="https://www.thepatternscompany.com/">The Patterns company</a>
                     </p>
                 </div>
 
@@ -532,6 +494,6 @@
     <script src="js/portfolio.js"></script>
     <script src="js/hoverdir.js"></script>
 
-</body>
+    </body>
 
 </html>

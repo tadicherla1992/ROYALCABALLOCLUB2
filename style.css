@@ -44,16 +44,29 @@
 @import url(css/owl.carousel.css);
 @import url(css/font-awesome.min.css);
 
-
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Bold.ttf') format('Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Mouldy Cheese';
+    src: url('fonts/MouldyCheeseRegular-WyMWG.ttf') format('WyMWG.ttf');
+  }
+  @font-face {
+    font-family: 'THE GLOBE PERSONAL USE';
+    src: url('fonts/TheGlobePersonalUseBold-2ORlw.ttf') format('2ORlw.ttf');
+  }
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
 
 body {
-    color: #999;
+   
     font-size: 15px;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: "Raleway"; */
     line-height: 1.80857;
+   overflow-x: hidden;
+   font-family: 'Mouldy Cheese';
 }
 
 body.demos .section {
@@ -104,17 +117,20 @@ h6 {
     font-weight: normal;
     position: relative;
     padding: 0 0 10px 0;
-    font-weight: normal;
     line-height: 120% !important;
     color: #1f1f1f;
-    margin: 0
+    margin: 0;
+    /* font-family: "Raleway"; */
+    /* font-family: "Mouldy Cheese"; */
 }
 
 h1 {
     font-size: 24px
 }
 
-
+.homepage-three-title{
+   /* font-family: 'Mouldy Cheese'; */
+}
 h2 {
     font-size: 22px
 }
@@ -603,17 +619,16 @@ li.social-links a {
 .slide-text h1 {
     color: rgba(47,36,132,255);
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 900;
+    font-family: 'THE GLOBE PERSONAL USE';
     text-transform: capitalize;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
 }
-
 .slide-text h1 span{
 	color: rgba(253,224,66,255);
 }
-
 .slide-text h2 {
     color: #fff;
     font-size: 22px;
@@ -682,16 +697,16 @@ li.social-links a {
     top:0;
     left:0;
 }
-.home-one-slider-otem::before{
+/* .home-one-slider-otem::before{
 	content: "";
 	position: absolute;
-	/* background: rgba(0,0,0, 0.8); */
+	background: rgba(0,0,0, 0.8);
 	width: 100%;
 	height: 100%;
 	top: 0%;
 	left: 100%;
 	z-index: 1
-}
+} */
 /*whatsapp css*/
 .whatsapp-link {
     padding: 10px;
@@ -1064,16 +1079,14 @@ li.social-links a {
         padding: 0;
     }
     .slider-wrapper .owl-nav .owl-prev, .slider-wrapper .owl-nav .owl-next {
-       display: none;
+        height:0px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.4s ease-in-out 0s;
+        width: 0px;
+        border-radius: 25px 0px 25px 0px;
     }
-    .slide-text {
-        position: absolute;
-       top:60%;
-       left:50%;
-       transform: translate(-50%,-50%);
-        width: 100%;
-        z-index: 1;
-    }   
+   
 }
  img:hover {
     
@@ -1093,7 +1106,12 @@ li.social-links a {
     color: rgba(253, 224, 66, 255);
     font-size: 30px;
 }
-
+.message-box .p{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(47, 36, 132, 255);
+    
+}
 .wb .h2 {
     font-size: 30px;
     font-weight: 600;
@@ -1125,8 +1143,10 @@ li.social-links a {
 .h3 {
     padding: 0;
     margin: 0;
-    width: 240px;
+    width: auto;
     position: relative;
+    color: rgba(253,224,66,255);
+    text-transform: uppercase;
 }
 
 .h3:after {
@@ -1153,7 +1173,6 @@ li.social-links a {
 .desc {
     padding: 30px;
     position: relative;
-    background: #393939;
     border: 1px solid #393939;
 	-webkit-border-radius: 25px 0px 25px 0px;
 	-moz-border-radius: 25px 0px 25px 0px;
@@ -2594,11 +2613,36 @@ select.mobile-device {
     background:rgba(253,224,66,255);
     z-index: 11000;
     position: fixed;
-    display: block;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    flex-direction: column;
     transition: 50s all;
+}
+.load {
+    width: 60px;
+    aspect-ratio: 4;
+    --_g: no-repeat radial-gradient(circle closest-side, rgba(47, 36, 132, 255) 90%, #0000);
+    background:
+        var(--_g) 0% 50%,
+        var(--_g) 50% 50%,
+        var(--_g) 100% 50%;
+    background-size: calc(100%/3) 100%;
+    animation: l7 1s infinite linear;
+}
+
+@keyframes l7 {
+    33% {
+        background-size: calc(100%/3) 0%, calc(100%/3) 100%, calc(100%/3) 100%
+    }
+
+    50% {
+        background-size: calc(100%/3) 100%, calc(100%/3) 0%, calc(100%/3) 100%
+    }
+
+    66% {
+        background-size: calc(100%/3) 100%, calc(100%/3) 100%, calc(100%/3) 0%
+    }
 }
 
 .preloader {
@@ -2724,16 +2768,6 @@ height: auto;
     padding: 1rem;
     color: rgba(253, 224, 66, 255);
     background-color: rgba(47, 36, 132, 255);
-}
-.loader {
-  
-  position: absolute;
-    margin: 0 auto;
-    left: 1%;
-    right: 1%;
-    top: 45%;
-  width: 75px;
-  height: 100px;
 }
 .loader__bar {
   position: absolute;
@@ -3170,9 +3204,9 @@ height: auto;
 .btn-light {
     padding: 13px 40px;
     font-size: 18px;
-    border: 2px solid #fd6802;
+    border: 2px solid rgba(47, 36, 132, 255);
     color: #ffffff;
-    background-color: #fd6802;
+    background-color: rgba(47, 36, 132, 255);
 }
 
 .btn-dark {
@@ -3185,9 +3219,9 @@ height: auto;
 
 .btn-light:hover,
 .btn-light:focus {
-    border-color: #fd6802;
+    border-color: rgba(253, 224, 66, 255);
     color: rgba(255, 255, 255);
-	background: #393939;
+	background:rgba(253, 224, 66, 255);
 }
 
 
@@ -3270,7 +3304,7 @@ height: auto;
 	background-clip: initial;
 	background-color: rgba(198, 39, 87, 0);
 	background-origin: initial;
-	/* background-position: center center; */
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -3442,12 +3476,14 @@ height: auto;
 	background: #ffffff;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	padding-bottom: 10px;
+    padding: 10px;
 	transition: all 1s ease-in-out;
 	margin-bottom: 30px;
+    border: 1px solid rgba(253, 224, 66, 255);
 }
 .about-icon{
 	padding: 20px 0px;
-	transition: all 1s ease-in-out;
+   
 }
 .about-icon span{
 	font-size: 48px;
@@ -3458,12 +3494,13 @@ height: auto;
 	font-size: 22px;
 	font-weight: 600;
 	padding: 10px 0px;
+    border-bottom:1px solid rgba(253,224,66,255);
 }
 .about-text h3 a{
-	color: #393939;
+	color: rgba(47, 36, 132, 255);
 }
 .about-text h3 a:hover{
-	color: #fd6802;
+	color: rgba(253, 224, 66, 255);
 }
 
 .about-item:hover .about-icon{
@@ -3817,7 +3854,7 @@ height: auto;
 .address-item h3{
 	font-size: 28px;
 	font-weight: 600;
-	color: #fd6802;
+	color:rgba(47,36,132,255);
 }
 
 
