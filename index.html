@@ -43,7 +43,7 @@
 
     <!-- LOADER -->
     <div id="preloader">
-        <img class="horseload" src="uploads/logo1 - Copy.png" style="width:100px;" />
+        <img class="horseload" src="uploads/logo1 -trans.png" style="width:100px;" />
         <div class="load"></div>
     </div><!-- end loader -->
     <!-- END LOADER -->
@@ -61,8 +61,8 @@
                         <li><a class="active" href="index.html">Home</a></li>
                         <li><a href="about-us.html">About us</a></li>
                         <li><a href="services.html">Our Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="Registrationform.html">Registration Form</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Registrationform.html">Registration</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
 
@@ -319,11 +319,108 @@
             padding-bottom: 3rem;
         }
     </style>
-    <video style="width: 100vw;height:100vh;" controls="controls">
+    <!-- <video style="width: 100vw;height:100vh;" controls="controls">
         <source src="uploads/Horselogo.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
+    </video> -->
+    <div class="" style="padding: 2rem;">
+        <h2
+            style="text-align: center;font-size: 30px;font-weight: 700;color: rgba(253,224,66,255);text-transform: uppercase;">
+            Our Raiders</h2>
+    </div>
+    <div id="carousel-container1">
+        <div id="video-carousel">
+            <div id="slide11">
+                <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/IDfuy4MYwCY?si=ITxbr3Ab1FyZMaiE" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="slide12">
+                <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/S42OgVVopMQ?si=K1bmViS9BzyGhgXZ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="slide13">
+                <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/u7DGImcvmYQ?si=h8_hUrANzkaYYjFZ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="slide14">
+                <iframe class="video" width="560" height="315"
+                    src="https://www.youtube.com/embed/udMBFY1S37Q?si=pvxbDT0Gr8HgEJny" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+    <style>
+        #carousel-container1 {
+            width: 100vw;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
+        #video-carousel {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 10px;
+            align-items: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .video {
+            width: 100%;
+            height: 300px;
+        }
+
+        @media(max-width:1070px) {
+            .video {
+                height: 400px;
+            }
+
+            #video-carousel {
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+            }
+
+        }
+
+        @media(max-width:600px) {
+            .video {
+                height: 400px;
+                width: 100%;
+                padding: 10px;
+            }
+
+            #video-carousel {
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+            }
+
+            #carousel-container1 {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    </style>
+    <script>
+
+
+    </script>
     <footer class="footer">
         <div class="container">
             <div class="row">

@@ -1003,7 +1003,7 @@ li.social-links a {
 
 .da-thumbs .pitem a div {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(0, 0, 0, 0.8); */
     width: 100%;
     height: 100%;
 }
