@@ -96,54 +96,33 @@
             <div class="section-title text-center">
                 <h3><span style="color:rgba(253,224,66,255)"> R O Y A L C A B A L L O C L U B</span> </h3>
                 <h3>Get in touch</h3>
-                <p class="lead">“I will contact you soon” !</p>
+                <p class="lead">“We will contact you soon” !</p>
             </div><!-- end title -->
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactform" class="row" name="contactform" method="post">
+                        <form id="contactfor" class="row" name="contactform" method="post">
                             <fieldset class="row-fluid">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" name="first_name" id="first_name" class="form-control"
-                                        placeholder="First Name">
+                                        placeholder="Full Name">
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <input type="text" name="last_name" id="last_name" class="form-control"
-                                        placeholder="Last Name">
-                                </div>
+
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="email" name="email" id="email" class="form-control"
-                                        placeholder="Your Email">
+                                        placeholder="Enter Your Email">
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="text" name="phone" id="phone" class="form-control"
-                                        placeholder="Your Phone">
+                                        placeholder="Phone Number">
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <label class="sr-only">Horse Select Service</label>
-                                    <select name="select_service" id="select_service" class="selectpicker form-control"
-                                        data-style="btn-white">
-                                        <option value="12">member ship</option>
-                                        <option value="Web Design">rider</option>
-                                        <option value="Web Development">horse rider</option>
-                                        <option value="Graphic Design">horse</option>
-                                        <option value="Others">Others</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <label class="sr-only">MY ROYAL CABALLO CLUB WORKS & Services</label>
-                                    <select name="select_price" id="select_price" class="selectpicker form-control"
-                                        data-style="btn-white">
-                                        <option value="LiDAR">Horse rider</option>
-                                        <option value="mapping">black horse</option>
-                                        <option value="GIS">rider </option>
-                                    </select>
-                                </div>
+
+
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <textarea class="form-control" name="comments" id="comments" rows="6"
-                                        placeholder="Give us more details.."></textarea>
+                                        placeholder="Comments.."></textarea>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
                                     <button type="submit" value="SEND"
@@ -154,43 +133,58 @@
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
-
-            <div class="row">
-                <div class="col-md-offset-1 col-sm-10 col-md-10 col-sm-offset-1 pd-add">
-                    <div class="address-item">
-                        <div class="address-icon">
-                            <i class="icon icon-location2"></i>
-                        </div>
-                        <h3>Address</h3>
-                        <p> Upperpally
-                            <br>Road No. 6, opposite MAG Sports Arena, Happy Homes Colony, Hyderabad, Upperpally,
-                            Telangana 500030
-                        </p>
-                    </div>
-                    <div class="address-item">
-                        <div class="address-icon">
-                            <i class="icon icon-headphones"></i>
-                        </div>
-                        <h3>Call Us</h3>
-                        <p> +91 9502667505
-                            <br> +91 9502667505
-                        </p>
-                    </div>
-                    <div class="address-item">
-                        <div class="address-icon">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </div>
-                        <h3>Email Us</h3>
-                        <p>ROYAL CABALLO CLUB.com
-                            <br>ROYAL CABALLO CLUB.com
-                        </p>
-
-                    </div>
-                </div>
-            </div><!-- end row -->
-
         </div><!-- end container -->
     </div><!-- end section -->
+
+    <div class="adr" style="display: flex;justify-content: center;align-items: center;">
+        <div class="address-item">
+            <div class="address-icon">
+                <i class="icon icon-location2"></i>
+            </div>
+            <h3>Address</h3>
+            <p> Upperpally
+                <br>Road No. 6, opposite MAG Sports Arena, Happy Homes Colony, Hyderabad, Upperpally,
+                Telangana 500030
+            </p>
+        </div>
+        <div class="address-item">
+            <div class="address-icon">
+                <i class="icon icon-headphones"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p> +91 9502667505
+                <br> +91 9502667505
+            </p>
+        </div>
+        <div class="address-item">
+            <div class="address-icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>ROYAL CABALLO CLUB.com
+                <br>ROYAL CABALLO CLUB.com
+            </p>
+
+        </div>
+    </div>
+    </div><!-- end row -->
+
+
+    <style>
+        .adr .address-item {
+            padding: 10px;
+        }
+
+        @media(max-width:768px) {
+            .adr {
+                flex-wrap: wrap;
+            }
+
+            .address-item {
+                width: 100%;
+            }
+        }
+    </style>
     <!--whatsapp-->
     <a href="https://wa.me/+919502667505" class="whatsapp-link"><span class="icon icon-whatsapp whatsapp"></span></a>
 
@@ -208,7 +202,7 @@
                             style="color:rgba(253,224,66,255);font-size: 20px;font-weight: 800;line-height: 2;letter-spacing: 0.5px;">
                             <span>
                                 ROYAL CABALLO CLUB </span> <span
-                                style="color:rgba(47, 36, 132, 255);font-size: 20px;font-weight: 700;">HORSE</span>
+                                style="color:white;font-size: 20px;font-weight: 700;">HORSE</span>
                             RIDING
                         </h2>
                         </p>
@@ -227,7 +221,7 @@
                             <li><a href="about-us.html">about <span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="services.html">Our services <span class="icon icon-arrow-right2"></span></a>
                             </li>
-                            <li><a href="portfolio.html">portfolio <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="Gallery.html">Gallery <span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="Registrationform.html">Registrationform <span
                                         class="icon icon-arrow-right2"></span></a>
                             </li>
@@ -238,7 +232,7 @@
                 <div class="col c3">
                     <!-- <h3 style="color: rgba(253,224,66,255);"><span>Contact</span> Us</h3> -->
                     <p style="color: rgba(253,224,66,255);">Contact Us</p>
-                    <p><span style="color: rgba(47, 36, 132, 255)"> R O Y A L C A B A L L O C L U B</span>
+                    <p><span style="color: rgba(253,224,66,255);"> R O Y A L C A B A L L O C L U B</span>
                     </p>
                     <p class="contact_info">
                         <span>Address:</span>D.NO: Road No. 6, opposite MAG Sports Arena, Happy Homes
@@ -246,7 +240,7 @@
                         Upperpally, Telangana 500030.<br />
                         <span>Telephone:</span> +91 95026 67505<br />
                         <span>pin: </span> 516126<br />
-                        <span>E-mail:</span> <a href="#" style="color: rgba(47,36,132,255);">royalcaballoclub.com</a>
+                        <span>E-mail:</span> <a href="#" style="color: rgba(253,224,66,255);">royalcaballoclub.com</a>
                     </p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/TSHRC"><span class="icon icon-facebook"></span></a>
@@ -261,7 +255,7 @@
         </div><!-- end container -->
     </footer><!-- end footer -->
 
-    <div class="copyrights" style="background-color: rgba(253,224,66,255);">
+    <div class="copyrights" style="background-color: rgba(47,36,132,255);">
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">
@@ -285,6 +279,7 @@
     <script src="js/custom.js"></script>
     <script src="js/portfolio.js"></script>
     <script src="js/hoverdir.js"></script>
+    <!-- <script src="js/modernizer.js"></script> -->
 
 </body>
 

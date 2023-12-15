@@ -32,6 +32,14 @@
 
     <!-- Main CSS-->
     <link href="csss/main.css" rel="stylesheet" media="all">
+    <!--book table script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('39hCsEwrxcKGEpEyd');
+        })();
+    </script>
 </head>
 
 <body>
@@ -72,97 +80,93 @@
         </nav>
     </header>
 
-    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
-                <div class="card-body">
-                    <h2 class="title"><span style="color:rgba(253,224,66,255);font-weight: 900;"> R O Y A L C A B A L L
-                            O C L U B</span></h2>
-                    <form method="POST">
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">first name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Birthday</label>
-                                    <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="date" name="birthday">
-                                        <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Gender</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Male
-                                            <input type="radio" checked="checked" name="gender" value="Male">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Female
-                                            <input type="radio" name="gender" value="Female">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Phone Number</label>
-                                    <input class="input--style-4" type="text" name="phone">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-group">
-                            <label class="label">Subject</label>
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="subject">
-                                    <option disabled="disabled" selected="selected">Choose option</option>
-                                    <option>horse</option>
-                                    <option>Black horse</option>
-                                    <option>horse</option>
-                                    <option>Black horse</option>
-                                    <option>horse</option>
-                                    <option>Black horse</option>
-                                    <option>horse</option>
-                                    <option>Black horse</option>
-                                    <option>horse</option>
-                                    <option>Black horse</option>
-                                    <option>horse</option>
-                                    <option>Black horse</option>
-
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
-                        </div>
-                        <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
-                        </div>
-                    </form>
+    <div class="banner-area banner-bg-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner">
+                        <h2>Our Services</h2>
+                        <ul class="page-title-link">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Our Services</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="contact" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3><span style="color:rgba(253,224,66,255)"> R O Y A L C A B A L L O C L U B</span> </h3>
+                <h3>Registration</h3>
+                <p class="lead">“We will contact you soon” !</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="bookingForm" class="row" name="contactform" method="post">
+                            <fieldset class="row-fluid">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control"
+                                        placeholder="Last Name">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" name="phone" id="phone" class="form-control"
+                                        placeholder="Phone Number" required>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <select id="profession" value="" class="form-control">
+                                        <option>Profession</option>
+                                        <option value="Student">Student</option>
+                                        <option value="Employee">Employee</option>
+                                        <option value="Business Man">Business Man</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <input type="number" name="age" id="age" class="form-control"
+                                        placeholder="Enter Your Age" required>
+                                </div>
+
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <select id="package" value="" class="form-control">
+                                        <option>Packages</option>
+                                        <option value="General Activity">General Activity</option>
+                                        <option value="Basic Package">Basic Package</option>
+                                        <option value="Beginner Package">Beginner Package</option>
+                                        <option value="Standard Package">Standard Package</option>
+                                        <option value="Special Training">Special Training</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6"
+                                        placeholder="Give us more details.."></textarea>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                                    <button type="submit" value="SEND"
+                                        class="btn btn-light btn-radius btn-brd grd1 btn-block">Register</button>
+                                </div>
+                            </fieldset>
+                            <p id="thank" style="display: none;color: green;padding: 5px;">Thank You For Registration!
+                                We Will Get
+                                Back You Soon.!
+                            </p>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
     <footer class="footer">
         <div class="container">
             <div class="">
@@ -176,7 +180,7 @@
                             style="color:rgba(253,224,66,255);font-size: 20px;font-weight: 800;line-height: 2;letter-spacing: 0.5px;">
                             <span>
                                 ROYAL CABALLO CLUB </span> <span
-                                style="color:rgba(47, 36, 132, 255);font-size: 20px;font-weight: 700;">HORSE</span>
+                                style="color:white;font-size: 20px;font-weight: 700;">HORSE</span>
                             RIDING
                         </h2>
                         </p>
@@ -195,7 +199,7 @@
                             <li><a href="about-us.html">about <span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="services.html">Our services <span class="icon icon-arrow-right2"></span></a>
                             </li>
-                            <li><a href="portfolio.html">portfolio <span class="icon icon-arrow-right2"></span></a></li>
+                            <li><a href="Gallery.html">Gallery<span class="icon icon-arrow-right2"></span></a></li>
                             <li><a href="Registrationform.html">Registrationform <span
                                         class="icon icon-arrow-right2"></span></a>
                             </li>
@@ -206,7 +210,7 @@
                 <div class="col c3">
                     <!-- <h3 style="color: rgba(253,224,66,255);"><span>Contact</span> Us</h3> -->
                     <p style="color: rgba(253,224,66,255);">Contact Us</p>
-                    <p><span style="color: rgba(47, 36, 132, 255)"> R O Y A L C A B A L L O C L U B</span>
+                    <p><span style="color: rgba(253,224,66,255);"> R O Y A L C A B A L L O C L U B</span>
                     </p>
                     <p class="contact_info">
                         <span>Address:</span>D.NO: Road No. 6, opposite MAG Sports Arena, Happy Homes
@@ -214,7 +218,7 @@
                         Upperpally, Telangana 500030.<br />
                         <span>Telephone:</span> +91 95026 67505<br />
                         <span>pin: </span> 516126<br />
-                        <span>E-mail:</span> <a href="#" style="color: rgba(47,36,132,255);">royalcaballoclub.com</a>
+                        <span>E-mail:</span> <a href="#" style="color: rgba(253,224,66,255);">royalcaballoclub.com</a>
                     </p>
                     <div class="social-links">
                         <a href="https://www.facebook.com/TSHRC"><span class="icon icon-facebook"></span></a>
@@ -232,7 +236,7 @@
     <a href="https://wa.me/+919502667505" class="whatsapp-link"><span class="icon icon-whatsapp whatsapp"></span></a>
 
     <!--whatsapp-->
-    <div class="copyrights" style="background-color: rgba(253,224,66,255);">
+    <div class="copyrights" style="background-color: rgba(47,36,132,255);">
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">
@@ -248,11 +252,98 @@
         </div><!-- end container -->
     </div><!-- end copyrights -->
     <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
     <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
+    <!-- <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script> -->
+    <script>
+        //book appointment
+
+        document.getElementById("bookingForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var fisrtName = document.getElementById("first_name").value;
+            var LastName = document.getElementById("last_name").value;
+            var email = document.getElementById("email").value;
+            var number = document.getElementById("phone").value;
+            var age = document.getElementById("age").value;
+            var profession = document.getElementById("profession").value;
+            var package = document.getElementById("package").value;
+            var message = document.getElementById("comments").value;
+
+
+            // console.log("date==>", date);
+            // console.log("time==>", time);
+            var contact = "+919502667505";
+
+            var encodedMessage = encodeURIComponent(
+                "First Name: " +
+                fisrtName +
+                "\n" +
+                "Last Name: " +
+                LastName +
+                "\n" +
+                "Email: " +
+                email +
+                "\n" +
+                "Phone Number: " +
+                number +
+                "\n" +
+                "Age: " +
+                age +
+                "\n" +
+                "Profession: " +
+                profession +
+                "\n" +
+                "Package: " +
+                package +
+                "\n" +
+                "Message: " +
+                message
+            );
+
+            // Check if user is on a mobile device
+            if (
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                    navigator.userAgent
+                )
+            ) {
+                // Mobile device, open WhatsApp
+                var whatsappLink = `whatsapp://send?phone=${contact}&text=${encodedMessage}`;
+                window.open(whatsappLink, "_blank");
+            } else {
+                // Desktop device, open default email client
+                emailjs
+                    .send("service_fx42pst", "template_2ngcxmf", {
+                        from_name: `${fisrtName}`,
+                        to_name: "Royal Caballo",
+                        message: ` 
+                        Name : ${fisrtName} ${LastName}
+                        Email : ${email}
+                        Phone Number : ${number}
+                        Age : ${age}
+                        Profession : ${profession}
+                        Package They Need : ${package}
+                        More details: ${message}
+                        Reply to ${email}`,
+                        reply_to: email,
+                    })
+                    .then(
+                        function (response) {
+                            // alert("Mail Sent");
+                            document.getElementById("thank").style.display = "block";
+                            console.log("response==>", response);
+                            // You can redirect or perform other actions after successful email sending
+                        },
+                        function (error) {
+                            alert("Error Sending Mail");
+                            console.log("error==>", error);
+                        }
+                    );
+            }
+        });
+    </script>
 
     <!-- Main JS-->
     <script src="js/global.js"></script>

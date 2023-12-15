@@ -522,28 +522,8 @@ a img.aligncenter {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-li.social-links {
-    margin: 0 8px;
-}
-@media(max-width:1000px){
-    .header_style_01 .navbar-default .navbar-nav > li a.active{
-        color: rgba(47,36,132,255);
-        box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15);
-        border-radius: 25px 0px 25px 0px;
-        background:rgba(253,224,66,255);
-    }
-    
-    .header_style_01 .navbar-default .navbar-nav > li:hover a,
-    .header_style_01 .navbar-default .navbar-nav > li:focus a {
-        color: #ffffff;
-        box-shadow: 0 10px 20px 0 rgba(5, 16, 44, .15);
-        border-radius: 25px 0px 25px 0px;
-        background:rgba(253,224,66,255);
-    }
-}
-li.social-links a {
-    padding: 13px 0 !important;
-}
+
+
 
 .navbar-nav li {
     position: relative;
@@ -2207,7 +2187,9 @@ select.mobile-device {
     height: 100% !important;
     opacity: 0;
 }
-
+select:focus{
+    outline: none;
+}
 
 /*# sourceMappingURL=bootstrap-select.css.map */
 
@@ -2266,7 +2248,13 @@ select.mobile-device {
 #contact {
     background: url(images/bg.png) no-repeat center center #fff;
 }
-
+#appointment{
+    
+}
+#appointment .in{
+    padding: 10px;
+    box-shadow: 1px 4px 6px black;
+}
 
 /*------------------------------------------------------------------
     FOOTER
@@ -2304,9 +2292,10 @@ select.mobile-device {
     /* background-color: #393939; */
     border-top: 1px solid rgba(253,224,66,255);
     font-weight: 600;
-    background-image: url('uploads/inner-bgportel.jpg');
+    background-color: rgba(47, 36, 132, 255);
+    /* background-image: url('uploads/portfolio_01.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 .footer .widget-title {
@@ -2357,7 +2346,7 @@ select.mobile-device {
 
 .footer-links a:hover,
 .footer a:hover {
-    color: rgba(47,36,132,255) !important;
+    color: rgba(253,224,66,255) !important;
 }
 
 .footer-links li {
@@ -2391,7 +2380,7 @@ select.mobile-device {
     border-right: 1px dashed rgba(255, 255, 255, 0.1);
 }
 .contact_info{
-    color: white;
+    color:white;
 }
 .copyrights {
     border-top: 1px dashed rgba(253,224,66,255);
@@ -2432,12 +2421,13 @@ select.mobile-device {
 }
 
 .footer-distributed .footer-company-name a{
-	color: rgba(47,36,132,255);
+	color:rgba(253, 224, 66, 255) !important;
     font-weight: 600;
 }
 
 .footer-distributed .footer-company-name a:hover{
-	color: rgba(47,36,132,255);
+	color: rgba(253,224,66,255);
+    text-decoration: underline white;
 }
 
 
@@ -2514,20 +2504,21 @@ select.mobile-device {
 }
 
 .social-links a {
-    background-color: rgba(47, 36, 132, 255);
+    background-color: rgba(253,224,66,255);
     padding: 15px;
-    position: relative;
     border-radius: 50%;
     margin: 5px;
+    transform: 1s all ease;
 }
 
 .social-links a span {
     font-size: 15px;
-    color: rgba(253, 224, 66, 255);
+    color:rgba(47, 36, 132, 255);
+  
 }
 
 .social-links a:hover {
-    background-color: rgba(253, 224, 66, 255);
+    background-color: white;
 }
 
 .social-links a:hover span {
@@ -2573,7 +2564,7 @@ select.mobile-device {
 }
 
 .dmtop:hover {
-	background-color: rgba(47,36,132,255);
+	background-color: rgba(253,224,66,255);
 }
 
 .icon_wrap {
